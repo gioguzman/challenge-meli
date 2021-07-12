@@ -9,13 +9,13 @@ marcados como favoritos que no excedan el monto total. Para esto se está analiz
 construir una API que dado una lista de item_id y el monto total pueda darle la lista de items
 que maximice el total gastado sin excederlo.
 
-####Aclaraciones:
+#### Aclaraciones:
 - Sólo se puede comprar una unidad por item_id.
 - No hay preferencia en la cantidad total de items siempre y cuando gasten el máximo
 posible.
 - El precio puede contener hasta 2 decimales.
 
-####Ejemplo:
+#### Ejemplo:
 
 | Item_id | Precio |
 | ----- | ---: |
@@ -31,7 +31,7 @@ ___
 
 ### El desafio es:
 
-####Nivel 1:
+#### Nivel 1:
 Programar (en cualquier lenguaje de programación) la funcionalidad mencionada
 respetando la siguiente firma:
 
@@ -71,13 +71,13 @@ private List<String> calculate (Map<String, Float> items, Float amount) {
 }
 ```
 
-####Nivel 2:
+#### Nivel 2:
 Crear una API REST, con el servicio “/coupon/” en donde se pueda enviar la lista de 
 item_ids y el monto del cupón y devuelva los items que tendría que comprar el usuario.
 
 **POST:** /coupon/
 
-#####Body:
+##### Body:
 
 ```json	
 {
@@ -86,7 +86,7 @@ item_ids y el monto del cupón y devuelva los items que tendría que comprar el 
 }
 ```
 
-#####Response:
+##### Response:
 
 ```json	
 {
@@ -107,7 +107,7 @@ esquema de paquetes:*
     el modelo del API (Request y Response)*
 - ***business:*** *Capa de negocio donde estará la lógica del método* ***/coupon/***
 
-####Nivel 3:
+#### Nivel 3:
 Hostear esa API en un cloud computing libre (Google App Engine, Amazon AWS, etc).
 
 **Consideraciones:**

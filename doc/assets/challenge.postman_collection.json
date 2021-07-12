@@ -1,0 +1,100 @@
+{
+	"info": {
+		"_postman_id": "9550e816-f065-4021-8ad9-33ac48c7eb03",
+		"name": "Meli",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "local-coupon",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"item_ids\": [\"MLA923198114\", \"MLA868907697\", \"MLA884534125\", \"MLA651394869\"],\r\n    \"amount\": 12000\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/coupon/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"coupon",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "remote-coupon",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"item_ids\": [\"MLA923198114\", \"MLA868907697\", \"MLA884534125\", \"MLA651394869\"],\r\n    \"amount\": 23000\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://3.21.136.138:8080/coupon/",
+					"protocol": "http",
+					"host": [
+						"3",
+						"21",
+						"136",
+						"138"
+					],
+					"port": "8080",
+					"path": [
+						"coupon",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Obtener Articulos",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.mercadolibre.com/items/MLA651394869",
+					"protocol": "https",
+					"host": [
+						"api",
+						"mercadolibre",
+						"com"
+					],
+					"path": [
+						"items",
+						"MLA651394869"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

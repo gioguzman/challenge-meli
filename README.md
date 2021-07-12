@@ -104,8 +104,8 @@ esquema de paquetes:*
 
 - ***web.controller:*** *Paquete en donde se obtiene la petición Rest del cliente
     y los Handler del error*
-- ***model:*** *Paquete donde se encuentran los modelos del API que está expuesta y
-    el modelo del API (Request y Response)*
+- ***model:*** *Paquete donde se encuentran los modelos del API que está expuesta (Request y Response) y
+    el modelo del API que se consume (Response)*
 - ***business:*** *Capa de negocio donde estará la lógica del método* ***/coupon/***
 
 - ***busicapa:*** *Capa de intercambio de datos con otros servicios*
@@ -183,15 +183,6 @@ En este momento podemos hacer la prueba por [**Postman**](/doc/assets/challenge.
 ___
 
 # **Ejecucción del API en AWS**
-
-Para la ejecución remota podemos hacer la prueba por [**Postman**](/doc/assets/challenge.postman_collection.json) al endpoint: 
-
-```json	
-{
-    "item_ids": ["MLA923198114", "MLA868907697", "MLA884534125", "MLA651394869"],
-    "amount": 12000
-}
-```
 
 Para el despliegue es necesario ejecutar el ***Lifecycle*** de **Maven** ***package***
 

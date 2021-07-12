@@ -108,7 +108,7 @@ esquema de paquetes:*
     el modelo del API (Request y Response)*
 - ***business:*** *Capa de negocio donde estará la lógica del método* ***/coupon/***
 
-- ***busicapa:*** *Capa de intercambio de datos con otros servicios* ***/coupon/***
+- ***busicapa:*** *Capa de intercambio de datos con otros servicios*
 
 ---
 

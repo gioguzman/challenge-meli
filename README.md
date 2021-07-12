@@ -155,6 +155,7 @@ a través del servicio EC2 con una ip elastica*
 EC2*
 - *TODO: Pruebas de carga, sin embargo el tener hosteada la api en una maquina puede soportar el tráfico*
 - *Para el coverage se implementó* ***jacoco con junit y mockito*** *TODO: Completar el porcentaje de coverage*
+![jacoco](doc/assets/jacoco.jpeg)
 
 ![jacoco](/doc/assets/jacoco.jpeg)
 
